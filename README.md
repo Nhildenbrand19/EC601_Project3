@@ -10,6 +10,7 @@
 | Error Handling | Now lets test another error handling example in the case of Panera Bread. Looking at my example from project 2 lets test the error handling of accidentally inputting a wrong character into the key word we are trying to search. For example typing in "Panrra" instead of "Panera" | In this case, I would expect the program to pull the key word that contains the error. There are way to many tweets to be able to distinguish and this would be a very hard error to deal with. |
 | Performance | Looking at a Google NLP case, I want to test if the sentiment analysis on movies would be changed by inputting 5,000 more negative reviews when training my model. The idea of this test is to see if more negative tests would misclassify any positive reviews because the model has seen a sustaintial amount more negative than postive reviews.| My expected outcome of this test is that the accuracy of the analysis actually would improve as it has more data to differentiate postive from negative  |
 
+
 ## Unit Tests for Project 2 Product
 | Type | Description of Test | Expected Outcome | 
 | ----------- | ----------- | ----------- |
@@ -17,3 +18,6 @@
 | Functionality under misuse casee | This test will look at a misuse case where the previous weeks schedule is pulled but the power rankings for the current week  is used. | My expected outcome here would be no issue with the output or program, only the incorrect prediction for the games as the current week schedule is not being evaluated. |
 | Error Handling | I want to test an error of pulling the correct schedule and power rankings but this time inputting 2 teams into the schedule that do not exist in the power rankings.  | I would expect the program to break actually. I did not build in an error handler yet when it comes to teams not in power rankings and in the schedule or vice versa. |
 | Performance | This test I want to give the program every weeks schedule of games from Week 1 to Week 17. I want this to then output the predicted outcome of every single game for the year into a text file. | I would expect this to work just as it would work for one week. |
+
+
+The code attached above shows what a unit test would look like using unitest and unitest.mock. 
